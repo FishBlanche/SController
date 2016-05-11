@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark"  xmlns:mx="library://ns.adobe.com/flex/mx" xmlns:comps="components.*"   creationComplete="create()" removedFromStage="remove()">
+	<fx:Style>
+		@namespace s "library://ns.adobe.com/flex/spark";
+		@namespace mx "library://ns.adobe.com/flex/mx";
+		.myRestartButton
+		{
+			disabledSkin: Embed(source="assets/restartDownSkin.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			downSkin: Embed(source="assets/restartDownSkin.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			overSkin: Embed(source="assets/restartNormalSkin.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			upSkin: Embed(source="assets/restartNormalSkin.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			color: #000000;
+		 
+			selectedUpSkin: Embed(source="assets/restartNormalSkin.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			selectedOverSkin: Embed(source="assets/restartNormalSkin.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			selectedDownSkin: Embed(source="assets/restartDownSkin.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			disabledColor: #222626;
+		 
+		}
+		.myCloseButton
+		{
+			disabledSkin: Embed(source="assets/UEON.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			downSkin: Embed(source="assets/UEON.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			overSkin: Embed(source="assets/UEON.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			upSkin: Embed(source="assets/UEON.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			color: #000000;
+			 
+			selectedUpSkin: Embed(source="assets/UEON.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			selectedOverSkin: Embed(source="assets/UEON.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			selectedDownSkin: Embed(source="assets/UEON.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			disabledColor: #222626;
+			 
+		}
+        .myResetButton
+		{
+			disabledSkin: Embed(source="assets/resetDownSkin.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			downSkin: Embed(source="assets/resetDownSkin.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			overSkin: Embed(source="assets/resetNormalSkin.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			upSkin: Embed(source="assets/resetNormalSkin.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			color: #000000;
+		 
+			selectedUpSkin: Embed(source="assets/resetNormalSkin.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			selectedOverSkin: Embed(source="assets/resetNormalSkin.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			selectedDownSkin: Embed(source="assets/resetDownSkin.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			disabledColor: #222626;
+		 
+		}
+		.myReturnButton
+		{
+			disabledSkin: Embed(source="assets/ba2.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			downSkin: Embed(source="assets/ba2.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			overSkin: Embed(source="assets/ba2.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			upSkin: Embed(source="assets/ba.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			color: #000000;
+			 
+			selectedUpSkin: Embed(source="assets/ba.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			selectedOverSkin: Embed(source="assets/ba.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			selectedDownSkin: Embed(source="assets/ba.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			disabledColor: #222626;
+		 
+		}
+		.myPlayButton
+		{
+			disabledSkin: Embed(source="assets/playBtn.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			downSkin: Embed(source="assets/playBtn.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			overSkin: Embed(source="assets/playBtn.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			upSkin: Embed(source="assets/playBtn.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			color: #000000;
+		 
+			selectedUpSkin: Embed(source="assets/playBtn.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			selectedOverSkin: Embed(source="assets/playBtn.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			selectedDownSkin: Embed(source="assets/playBtn.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			disabledColor: #222626;
+			 
+		}
+		.myStopButton
+		{
+			disabledSkin: Embed(source="assets/stopBtn.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			downSkin: Embed(source="assets/stopBtn.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			overSkin: Embed(source="assets/stopBtn.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			upSkin: Embed(source="assets/stopBtn.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			color: #000000;
+			 
+			selectedUpSkin: Embed(source="assets/stopBtn.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			selectedOverSkin: Embed(source="assets/stopBtn.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			selectedDownSkin: Embed(source="assets/stopBtn.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			disabledColor: #222626;
+			 
+		}
+		.hscroll
+		{
+			thumbSkin:Embed(source="assets/scrollthumb.png");
+			trackSkin: Embed(source="assets/scrolltrack.png");
+			downArrowSkin:Embed(source="assets/down.png");
+			upArrowSkin:Embed(source="assets/up.png");
+		}
+		.myStartButton
+		{
+			disabledSkin: Embed(source="assets/UEOFF.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			downSkin: Embed(source="assets/UEOFF.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			overSkin: Embed(source="assets/UEOFF.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			upSkin: Embed(source="assets/UEOFF.png",
+				scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			color: #000000;
+			 
+			selectedUpSkin: Embed(source="assets/UEOFF.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			selectedOverSkin: Embed(source="assets/UEOFF.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			selectedDownSkin: Embed(source="assets/UEOFF.png", scaleGridLeft="57", scaleGridTop="22", scaleGridRight="58", scaleGridBottom="26");
+			disabledColor: #222626;
+		 
+		}
+		 
+	</fx:Style>
+	<fx:Declarations>
+		 
+		<s:HScrollBar id="vsc"/>
+	</fx:Declarations>
+	 <fx:Script>
+		 <![CDATA[
+			 import mx.formatters.DateFormatter;
+			 import mx.formatters.NumberFormatter;
+			 import mx.utils.StringUtil;
+			 
+			 import components.CustomSocket;
+			 import components.CustomSocketUe;
+			 import components.LevelPicGp;
+			 
+			 import utility.MyEvent;
+			 
+			 private var ueSocket:CustomSocketUe;
+			 private var pcSocket:CustomSocket;
+			 private var timer:Timer;
+			 
+			 private var dateFormatter:DateFormatter= new DateFormatter;   
+		 	 private var vf:NumberFormatter = new NumberFormatter();
+			 
+			 private var loader:Loader = new Loader();
+			 private var loader1:Loader = new Loader();
+			 
+			 private  var levelIDName:Dictionary = new Dictionary;//level id to name
+			 private  var levelIdList:Array=new Array;
+			 
+			 private  var levelSubIDName:Dictionary = new Dictionary;//sublevel id to name
+			 private  var levelSubIdList:Array=new Array;
+			 
+			 private  var levelTosub:Dictionary = new Dictionary;//level  to   sublevel
+			 private  var levelgpList:Array=new Array;
+			 
+			 private  var  idCount:uint=0;
+			 private  var  idSubCount:uint=0;
+			 private var oldLg:LevelPicGp;
+			 private var oldSubLg:LevelPicGp;
+			 
+			 private var picFlag:Boolean=false;
+			 
+			 private var closeFlag:Boolean=false;
+			 private var timer1Stop:Timer;
+			 /*
+			 var level1:LevelPicGp=new LevelPicGp;
+			 var level2:LevelPicGp=new LevelPicGp;
+			 var level3:LevelPicGp=new LevelPicGp;
+			 var level4:LevelPicGp=new LevelPicGp;*/
+			 
+			 
+			 private function remove():void
+			 {
+				 ueSocket.removeEventListener("_connectHandler",judge_Connect1Status);
+				 ueSocket.removeEventListener("_newComingData",Handle_newComingData);
+				 ueSocket.myByte.clear();
+				 pcSocket.removeEventListener("_connectHandler",judge_Connect2Status);
+				 pcSocket.removeEventListener("_newComingData",Handle_pcData);
+				 pcSocket.myByte.clear();
+			 }
+			 private function create():void
+			 {
+				 
+				 
+				 vf.precision=2;
+				 dateFormatter.formatString = "JJ:NN";   
+				 connect_UE();
+			      connect_PC();
+			 }
+			 private function connect_UE():void
+			 {
+				 ueSocket=new CustomSocketUe;
+				 ueSocket.addEventListener("_connectHandler",judge_Connect1Status,false,0,true);
+				 ueSocket.addEventListener("_newComingData",Handle_newComingData,false,0,true);
+				 ueSocket.socket.connect("192.168.173.1",6000);
+			 }
+			 private function connect_PC():void
+			 {
+				 pcSocket=new CustomSocket;
+				 pcSocket.addEventListener("_connectHandler",judge_Connect2Status,false,0,true);
+				 pcSocket.addEventListener("_newComingData",Handle_pcData,false,0,true);
+				 pcSocket.socket.connect("192.168.173.1",8888);
+			 
+				 if(!timer)
+				 {
+					 timer=new Timer(200);
+					 timer.addEventListener(TimerEvent.TIMER,timehandle,false,0,true);  
+				     timer.start();  
+				 }
+			 }
+			 private function ModeAsk():void
+			 {
+				 var str:String="mode:1";
+				 sendCommand(str);
+			 }
+			 private function judge_Connect1Status(evt:Event):void
+			 {
+				// volumeChange();
+				// speedChange();
+				
+				 if(ueSocket.socket.connected&&picFlag)
+				 {
+					 busyLb.includeInLayout=false;
+					 busyLb.visible=false;
+					 busy.includeInLayout=false;
+					 busy.visible=false;
+					 tiplb.includeInLayout=false;
+					 tiplb.visible=false;
+					 startBtn.includeInLayout=false;
+					 startBtn.visible=false;
+					  closeFlag=false;
+					 currentLevel.text="正在参观210房型";
+					 trace("judge_Connect1Status");
+					 ModeAsk();
+					
+					 /*
+					 stateNormal.includeInLayout=true;
+					 stateNormal.visible=true;
+					 stateError.includeInLayout=false;
+					 stateError.visible=false;*/
+				 }
+			 }
+			 private function judge_Connect2Status(evt:Event):void
+			 {
+				 if(pcSocket.socket.connected) 
+				 {
+					// currentConnect2Status.text="连接成功";
+					 trace("pc connected");
+					 pcSocket.dataTypeflag=0;
+					 pcSocket.picTotalLen=0;
+					 pcSocket.firstSegflag=true;
+					 pcSocket.myByte.clear();
+				  	 sendPcCommand("0");//request the name of the connecting pc
+					 
+				 }
+				 else
+				 {
+					 trace("not  connected");
+				//	 currentConnect2Status.text="未连接";
+				 }
+			}
+		 
+			 private function Handle_newComingData(evt:MyEvent):void
+			 {
+				  trace("Handle_newComingData"+evt.data);
+				 var strEvtData:String=String(evt.data);
+				 var strEvtDataLen:uint=strEvtData.length;
+				 if(strEvtDataLen>=1)
+				 {
+					 var endChar:String=strEvtData.charAt(strEvtData.length-1);
+					 var cmdStr:String=strEvtData.substr(0,strEvtData.length-1);
+					 if(endChar=="7")
+					 {
+						 var arrMode:Array = StringUtil.trim(cmdStr).split(";");
+						 var arrHandleMode:Array=String(arrMode[0]).split(":");
+						 if(arrHandleMode[1]==0)
+						 {
+							 //手柄关
+							 HandleOn.includeInLayout=false;
+							 HandleOn.visible=false;
+							 HandleOff.includeInLayout=true;
+							 HandleOff.visible=true;
+							 playBtn.enabled=true;
+							 stopBtn.enabled=true;
+							 disableBtn.includeInLayout=false;
+							 disableBtn.visible=false;
+						 }
+						 else
+						 {
+							 HandleOn.includeInLayout=true;
+							 HandleOn.visible=true;
+							 HandleOff.includeInLayout=false;
+							 HandleOff.visible=false;
+							 playBtn.enabled=false;
+							 stopBtn.enabled=false;
+							 disableBtn.includeInLayout=true;
+							 disableBtn.visible=true;
+							
+						 }
+						 var arrLenMode:Array=String(arrMode[1]).split(":");
+						 if(arrLenMode[1]==0)
+						 {
+						 	//眼镜关
+							 lenOn.includeInLayout=false;
+							 lenOn.visible=false;
+							 lenOff.includeInLayout=true;
+							 lenOff.visible=true;
+						 }
+						 else
+						 {
+							 lenOn.includeInLayout=true;
+							 lenOn.visible=true;
+							 lenOff.includeInLayout=false;
+							 lenOff.visible=false;
+						 }
+						 
+						 if(HandleOff.includeInLayout&&lenOff.includeInLayout)
+						 {
+							 playBtn.enabled=false;
+							 stopBtn.enabled=false;
+							 disableBtn.includeInLayout=true;
+							 disableBtn.visible=true;
+						 }
+						 
+						  
+					 }
+					 else if(endChar=="8")
+					 {
+						 if(cmdStr=="stopplay")
+						 {
+							 playBtn.includeInLayout=true;
+							 playBtn.visible=true;
+							 stopBtn.includeInLayout=false;
+							 stopBtn.visible=false;
+						 }
+						 else if(cmdStr=="play")
+						 {
+							 playBtn.includeInLayout=false;
+							 playBtn.visible=false;
+							 stopBtn.includeInLayout=true;
+							 stopBtn.visible=true;
+						 }
+					 }
+					 else if(endChar=="9")
+					 {
+						 currentLevel.text="";
+						 if(oldLg)
+						 {
+							 oldLg.blackback.includeInLayout=true;
+							 oldLg.blackback.visible=true;
+							 oldLg.blueback.includeInLayout=false;
+							 oldLg.blueback.visible=false;
+						 }
+						 if(oldSubLg)
+						 {
+							 oldSubLg.blackback.includeInLayout=true;
+							 oldSubLg.blackback.visible=true;
+							 oldSubLg.blueback.includeInLayout=false;
+							 oldSubLg.blueback.visible=false;
+						 }
+						 var arr:Array = StringUtil.trim(cmdStr).split(":");
+						 currentLevel.text+=arr[0];
+						 currentLevel.text+=levelIDName[arr[1]];
+						 currentLevel.text+=levelSubIDName[arr[2]];
+						 
+						 
+						 var lglistLen:uint= levelgpList.length;
+						 var tempplg:LevelPicGp;
+						 for(var i:uint=0;i<lglistLen;i++)
+						 {
+							 tempplg=levelgpList[i];
+							 if(arr[1]==tempplg.id)
+							 {
+								 tempplg.blackback.includeInLayout=false;
+								 tempplg.blackback.visible=false;
+								 tempplg.blueback.includeInLayout=true;
+								 tempplg.blueback.visible=true;
+								 myImg.source=tempplg.levelPic.source;
+								 oldLg=tempplg;
+								 break;
+							 }
+						 }
+						 if(levelTosub[arr[1]]!=null)
+						 {
+							 var tempArr:Array=levelTosub[arr[1]];
+							 var tempArrLen:uint=tempArr.length;
+							 var templg:LevelPicGp;
+							 for(var k:uint=0;k<tempArrLen;k++)
+							 {
+								 templg=tempArr[k] as LevelPicGp;
+								 if(templg.id==arr[2])
+								 {
+									 templg.blackback.includeInLayout=false;
+									 templg.blackback.visible=false;
+									 templg.blueback.includeInLayout=true;
+									 templg.blueback.visible=true;
+									 myImg.source=templg.levelPic.source;
+									 oldSubLg=templg;
+									 break;
+								 }
+							 }
+						 }
+					
+					 }
+				 }
+			  }
+			 private function Handle_pcData(evt:Event):void
+			 {
+				 var j:uint=0;
+				 if(pcSocket.dataTypeflag==1)
+				 { 
+					// trace("pcSocket.dataTypeflag==1"+pcSocket.myByte.length);
+					 pcSocket.myByte.position = 0; // 在将 ByteArray 转换成 String中应注意将 bytes 的 position 设置为 0，切记；
+					 currentPCName.text=pcSocket.myByte.readUTFBytes(pcSocket.myByte.length-1);	
+					 trace("currentPCName.text   "+currentPCName.text);
+					 pcSocket.myByte.clear();
+				  	 sendPcCommand("1");//request level list
+					 Loading_Handle();
+				 }
+				 else if(pcSocket.dataTypeflag==2)
+				 {
+				     var listLen:uint=levelIdList.length;
+					 for(j=0;j<listLen;j++)
+					 {
+						 levelTosub[levelIdList[j]]=null;
+						 levelIdList.pop();
+					 }
+					 var len1:uint=levelgpList.length;
+					 for(var k:uint=0;k<len1;k++)
+					 {
+						 levelgpList.pop();
+					 }
+					 
+					 idCount=0;
+					 myImg.source=null;
+					 picCanvas.removeAllElements();//clear the old levels
+						 
+					 pcSocket.myByte.position = 0; // 在将 ByteArray 转换成 String中应注意将 bytes 的 position 设置为 0，切记；
+			         var str:String=pcSocket.myByte.readUTFBytes(pcSocket.myByte.length-2);
+				 	 var levelArray:Array = StringUtil.trim(str).split(";");
+					 var len:int=levelArray.length;
+					 var levelTempArray:Array=new Array;
+					 pcSocket.myByte.clear();
+					 for(var i:int=0;i<len;i++)
+					 {
+						 levelTempArray=levelArray[i].split(",");
+						 if(levelTempArray.length==2)
+						 {
+							 levelIDName[levelTempArray[0]]=levelTempArray[1];
+							 levelIdList.push(levelTempArray[0]);
+							 trace("level id name  "+levelTempArray[0]+","+levelTempArray[1]);
+						 }
+					 }
+					 if(levelIdList.length>0)
+					 {
+						 var cmdStr:String="2"+levelIdList[0];
+						 trace("cmd"+cmdStr);
+						 pcSocket.dataTypeflag=3;
+						 pcSocket.firstSegflag=true;
+						 pcSocket.picTotalLen=0;
+						 sendPcCommand(cmdStr);//request the picture of the  level
+						 idCount++;
+					 }
+					 
+				 }
+				 else if(pcSocket.dataTypeflag==3)
+				 {
+					// pcSocket.myByte.position = 0; // 在将 ByteArray 转换成 String中应注意将 bytes 的 position 设置为 0，切记；
+				 
+					 var bytePic:ByteArray=new ByteArray;
+					// bytePic.position=0;
+				 
+					 pcSocket.myByte.readBytes(bytePic,0,(pcSocket.myByte.length-8));
+					// trace("bytePic"+bytePic.length);
+					 loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onBytesLoaded,false,0,true);
+					 loader.loadBytes(bytePic);
+				 
+			 		 pcSocket.myByte.clear();
+				 }
+				 else if(pcSocket.dataTypeflag==4)
+				 {
+					 pcSocket.myByte.position = 0; // 在将 ByteArray 转换成 String中应注意将 bytes 的 position 设置为 0，切记；
+					 var uestatusStr:String=pcSocket.myByte.readUTFBytes(pcSocket.myByte.length-1);	
+					 
+					 if(uestatusStr=="0"&&closeFlag)
+					 {
+						 //ue is closed
+						 trace("ue is closed");
+						 busyLb.includeInLayout=true;
+						 busyLb.visible=true;
+						 busy.includeInLayout=true;
+						 busy.visible=true;
+						 
+						 
+						 tiplb.text="Loading...";
+						 tiplb.includeInLayout=true;
+						 tiplb.visible=true;
+						 startBtn.includeInLayout=true;
+						 startBtn.visible=true;
+						 judge_Connect1Status(null);
+					 }
+					 else  if(uestatusStr=="1")
+					 {   //1    ue is starting
+						
+					  
+						 
+					 }
+					 else if(uestatusStr=="2")
+					 {
+						 // ue is running
+						 
+					 
+					 }
+					 else if(uestatusStr=="3")
+					 {
+						 // ue is closing
+						 
+					 }
+					 pcSocket.myByte.clear();
+				 }
+				 else if(pcSocket.dataTypeflag==6)
+				 {
+					 var listLen1:uint=levelSubIdList.length;
+					 
+					 for(j=0;j<listLen1;j++)
+					 {
+						 levelSubIdList.pop();
+					 }
+					 idSubCount=0;
+				 
+					 pcSocket.myByte.position = 0; // 在将 ByteArray 转换成 String中应注意将 bytes 的 position 设置为 0，切记；
+					 var str:String=pcSocket.myByte.readUTFBytes(pcSocket.myByte.length-2);
+					 var levelArray:Array = StringUtil.trim(str).split(";");
+					 var len:int=levelArray.length;
+					 var levelTempArray:Array=new Array;
+					 pcSocket.myByte.clear();
+					 for(var i:int=0;i<len;i++)
+					 {
+						 levelTempArray=levelArray[i].split(",");
+						 if(levelTempArray.length==2)
+						 {
+							 levelSubIDName[levelTempArray[0]]=levelTempArray[1];
+							 levelSubIdList.push(levelTempArray[0]);
+							 trace("levelSubId"+levelTempArray[0]+","+levelTempArray[1]);
+						 }
+					 }
+					 if(levelSubIdList.length>0)
+					 {
+						 var cmdStr:String="7"+levelSubIdList[0];
+						 pcSocket.dataTypeflag=7;
+						 pcSocket.firstSegflag=true;
+						 pcSocket.picTotalLen=0;
+						 sendPcCommand(cmdStr);//request the picture of the  level
+						 idSubCount++;
+					 }
+				 }
+				 else if(pcSocket.dataTypeflag==7)
+				 {
+					 var bytePic:ByteArray=new ByteArray;
+					 // bytePic.position=0;
+					 
+					 pcSocket.myByte.readBytes(bytePic,0,(pcSocket.myByte.length-8));
+					 // trace("bytePic"+bytePic.length);
+					 loader1.contentLoaderInfo.addEventListener(Event.COMPLETE, onBytesLoaded1,false,0,true);
+					 loader1.loadBytes(bytePic);
+					 
+					 pcSocket.myByte.clear();
+				 }
+			 }
+			 private function onBytesLoaded(e:Event):void
+			  {
+				// myImg.source=loader.content;
+				 
+			     var i:uint= idCount-1;
+				 var lg:LevelPicGp=new LevelPicGp;
+				 lg.id=levelIdList[i];
+				 lg.levelPic.source=loader.content;
+				 var m:uint=i%6;
+				 if(m==0||m==1||m==2)
+				 {
+					 lg.y=23;
+					 if(i<3)
+					 {
+						 lg.x=25+202*i+32*i;
+					 }
+					 else
+					 {
+						 var k:uint=Math.floor(i/6);
+						 lg.x=25+202*(i-k*3)+32*(i-k*3);
+					 }
+				 }
+				 else
+				 {
+					 lg.y=171;
+					
+
+						 var j:uint=i-3;
+					
+					
+					
+					 if(j<3)
+					 {
+						 lg.x=25+202*j+32*j;
+					 }
+					 else
+					 {
+						 var t:uint=Math.floor(j/6);
+						 lg.x=25+202*(j-t*3)+32*(j-t*3);
+					 }
+					 
+				 }
+				 trace("onBytesLoaded  "+lg.id+","+lg.x);
+				 lg.addEventListener(MouseEvent.MOUSE_DOWN,changeLevel,false,0,true);
+				 picCanvas.addElement(lg);
+				 lg.includeInLayout=false;
+				 lg.visible=false;
+				 levelgpList.push(lg);
+				 
+				 if(idCount==1)
+				 {
+					 myImg.source=loader.content;
+					 
+					 if(oldLg)
+					 {
+						 oldLg.blackback.includeInLayout=true;
+						 oldLg.blackback.visible=true;
+						 oldLg.blueback.includeInLayout=false;
+						 oldLg.blueback.visible=false;
+					 }
+				 
+					 lg.blackback.includeInLayout=false;
+					 lg.blackback.visible=false;
+					 lg.blueback.includeInLayout=true;
+					 lg.blueback.visible=true;
+					 oldLg=lg;
+				 }
+				  
+				 if(idCount<levelIdList.length)
+				 {
+					 var cmdStr:String="2"+levelIdList[idCount];
+					 trace("cmdStr"+cmdStr);
+					 pcSocket.firstSegflag=true;
+					 pcSocket.picTotalLen=0;
+					 sendPcCommand(cmdStr);//request the picture of the  level
+					 idCount++;
+				 }
+				 else
+				 {
+					 pcSocket.dataTypeflag=0;
+					 pcSocket.picTotalLen=0;
+					 pcSocket.firstSegflag=true;
+					 pcSocket.myByte.clear();
+					 
+					 levelTosub[oldLg.id]=new Array();
+					 var pcCmdStr:String="6"+oldLg.id;
+					 trace("pcCmdStr"+pcCmdStr);
+					 sendPcCommand(pcCmdStr);//request the name of the connecting pc
+				 }
+			  }
+			 private function onBytesLoaded1(e:Event):void
+			 {
+				 var i:uint= idSubCount-1;
+				 var lg:LevelPicGp=new LevelPicGp;
+				 lg.id=levelSubIdList[i];
+				 lg.levelPic.source=loader1.content;
+				 var m:uint=i%6;
+				 if(m==0||m==1||m==2)
+				 {
+					 lg.y=23;
+					 if(i<3)
+					 {
+						 lg.x=25+202*i+32*i;
+					 }
+					 else
+					 {
+						 var k:uint=Math.floor(i/6);
+						 lg.x=25+202*(i-k*3)+32*(i-k*3);
+					 }
+				 }
+				 else
+				 {
+					 lg.y=171;
+					 
+					 var j:uint=i-3;
+					 
+					 
+					 if(j<3)
+					 {
+						 lg.x=25+202*j+32*j;
+					 }
+					 else
+					 {
+						 var t:uint=Math.floor(j/6);
+						 lg.x=25+202*(j-t*3)+32*(j-t*3);
+					 }
+					 
+				 }
+				 trace("onBytesLoaded1  "+lg.id+","+lg.x+","+lg.y);
+				 lg.addEventListener(MouseEvent.MOUSE_DOWN,changeSubLevel,false,0,true);
+				 if(lg.id=="1")
+				 {
+					 picCanvasSub.addElement(lg);
+				 }
+				
+				 (levelTosub[oldLg.id] as Array).push(lg);
+				 /*
+				 if(idSubCount==1)
+				 {
+					 myImg.source=loader1.content;
+				 }*/
+				 
+				 if(idSubCount<levelSubIdList.length)
+				 {
+					 var cmdStr:String="7"+levelSubIdList[idSubCount];
+					 pcSocket.firstSegflag=true;
+					 pcSocket.picTotalLen=0;
+					 sendPcCommand(cmdStr);//request the picture of the  level
+					 idSubCount++;
+				 }
+				 else
+				 {
+					 pcSocket.dataTypeflag=0;
+					 pcSocket.picTotalLen=0;
+					 pcSocket.firstSegflag=true;
+					 pcSocket.myByte.clear();
+					 if(picCanvas.includeInLayout)
+					 {
+						 var len:uint=levelgpList.length;
+						 for(var k:uint=0;k<len;k++)
+						 {
+							 (levelgpList[k]  as LevelPicGp).includeInLayout=true;
+							 (levelgpList[k]  as LevelPicGp).visible=true;
+							 trace("picCanvas.includeInLayout  "+(levelgpList[k]  as LevelPicGp).id);
+						 }
+						 picFlag=true;
+						 judge_Connect1Status(null);
+					 }
+					 
+					
+				 }
+			 }
+			 private function Timer1Stophandle(e:TimerEvent):void  
+			 {  
+				 timer1Stop.stop();
+				 busy1.includeInLayout=false;
+				 busy1.visible=false;
+				 picCanvasSub.includeInLayout=true;
+				 picCanvasSub.visible=true;
+				 oldSubLg.blackback.includeInLayout=false;
+				 oldSubLg.blackback.visible=false;
+				 oldSubLg.blueback.includeInLayout=true;
+				 oldSubLg.blueback.visible=true;
+			 }
+			 private function changeSubLevel(e:MouseEvent):void
+			 {
+				 //change room
+				 if(HandleOff.includeInLayout)
+				 {
+					 playBtn.includeInLayout=true;
+					 playBtn.visible=true;
+					 stopBtn.includeInLayout=false;
+					 stopBtn.visible=false;
+					 
+					 if(!timer1Stop)
+					 {
+						 timer1Stop=new Timer(1000);
+						 timer1Stop.addEventListener(TimerEvent.TIMER,Timer1Stophandle,false,0,true);  
+					 }
+					 timer1Stop.start();
+					 busy1.includeInLayout=true;
+					 busy1.visible=true;
+					 picCanvasSub.includeInLayout=false;
+					 picCanvasSub.visible=false;
+					 currentLevel.text="";
+					 currentLevel.text+="正在参观";
+					 currentLevel.text+="210房型";
+					 currentLevel.text+=levelSubIDName[(e.currentTarget as LevelPicGp ).id];
+					 
+					 if(oldSubLg)
+					 {
+						 oldSubLg.blackback.includeInLayout=true;
+						 oldSubLg.blackback.visible=true;
+						 oldSubLg.blueback.includeInLayout=false;
+						 oldSubLg.blueback.visible=false;
+					 }
+					 myImg.source=(e.currentTarget as LevelPicGp ).levelPic.source;
+					
+					 oldSubLg=(e.currentTarget as LevelPicGp );
+					 // var cmdStr="changeLevel:"+levelIDName[(e.currentTarget as LevelPicGp).id];
+					 var cmdStr:String="changesublevel:"+(e.currentTarget as LevelPicGp).id;
+					 sendCommand(cmdStr);
+					 if(HandleOff.includeInLayout&&lenOff.includeInLayout)
+					 {
+						 playBtn.enabled=false;
+						 stopBtn.enabled=false;
+						 disableBtn.includeInLayout=true;
+						 disableBtn.visible=true;
+					 }
+				 }
+				
+			 }
+			 private function changeLevel(e:MouseEvent):void
+			 {
+				// change Level
+				 if((e.currentTarget as LevelPicGp).id=="1")
+				 {
+					// Loading_Handle();
+					 
+					 picCanvas.visible=false;
+					 picCanvas.includeInLayout=false;
+					 picBack.visible=false;
+					 picBack.includeInLayout=false;
+					 
+					 picCanvasSub.removeAllElements();
+					 picCanvasSub.visible=true;
+					 picCanvasSub.includeInLayout=true;
+					 picBackSub.visible=true;
+					 picBackSub.includeInLayout=true;
+					 backBtn.includeInLayout=true;
+					 backBtn.visible=true;
+					 
+					// scrllr.includeInLayout=true;
+					// scrllr.visible=true;
+					 
+					 if(oldLg)
+					 {
+						 oldLg.blackback.includeInLayout=true;
+						 oldLg.blackback.visible=true;
+						 oldLg.blueback.includeInLayout=false;
+						 oldLg.blueback.visible=false;
+					 }
+					 myImg.source=(e.currentTarget as LevelPicGp ).levelPic.source;
+					 (e.currentTarget as LevelPicGp ).blackback.includeInLayout=false;
+					 (e.currentTarget as LevelPicGp ).blackback.visible=false;
+					 (e.currentTarget as LevelPicGp ).blueback.includeInLayout=true;
+					 (e.currentTarget as LevelPicGp ).blueback.visible=true;
+					 oldLg=(e.currentTarget as LevelPicGp );
+					 // var cmdStr="changeLevel:"+levelIDName[(e.currentTarget as LevelPicGp).id];
+					 var cmdStr:String="changelevel:"+(e.currentTarget as LevelPicGp).id;
+				//	 sendCommand(cmdStr);
+				//	 trace("changelevel:");
+					 var selectedID:String= (e.currentTarget as LevelPicGp ).id;
+					 if(levelTosub[selectedID]==null)
+					 {
+						 levelTosub[selectedID]=new Array();
+						 var pcCmdStr:String="6"+(e.currentTarget as LevelPicGp ).id;
+						 sendPcCommand(pcCmdStr);//request the name of the connecting pc
+					 }
+					 else
+					 {
+						 var tempArr:Array=levelTosub[selectedID];
+						 var i:uint= 0;
+						 var tempArrLen:uint=tempArr.length;
+						 var m:uint=0;
+						 for(i=0;i<tempArrLen;i++)
+						 {
+							 m=i%6;
+							 if(m==0||m==1||m==2)
+							 {
+								 tempArr[i].y=23;
+								 if(i<3)
+								 {
+									 tempArr[i].x=25+202*i+32*i;
+								 }
+								 else
+								 {
+									 var k:uint=Math.floor(i/6);
+									 tempArr[i].x=25+202*(i-k*3)+32*(i-k*3);
+								 }
+							 }
+							 else
+							 {
+								 tempArr[i].y=171;
+								 var j:uint=i-3;
+								 
+								 if(j<3)
+								 {
+									 tempArr[i].x=25+202*j+32*j;
+								 }
+								 else
+								 {
+									 var t:uint=Math.floor(j/6);
+									 tempArr[i].x=25+202*(j-t*3)+32*(j-t*3);
+								 }
+								 
+							 }
+							 
+							 picCanvasSub.addElement(tempArr[i]);
+						 }
+					 }
+				 }
+				 
+				  
+				
+			 }
+			 private function sendCommand(code:String):void
+			 {
+				 if(ueSocket.socket.connected)
+				 {
+					 if(code=="reset:")
+					 { 
+						 Loading_Handle();
+						 
+					 }
+					 else if(code=="play:")
+					 {
+						  
+					 }
+					 trace("ueSocket code"+code);
+					 ueSocket.sendRequest(code);
+				 }
+				 else
+				 {
+			//		 currentConnect1Status.text="未连接";
+				 }
+			 }
+			private function sendPcCommand(code:String):void
+			{
+				if(pcSocket.socket.connected)
+				{
+					if(code=="42")
+					{
+						closeFlag=true;
+						Loading_Handle();
+					}
+					if(code=="41")
+					{
+						//closeFlag=false;
+						 
+					}
+					if(code=="43")
+					{
+						Loading_Handle();
+					}
+					
+					pcSocket.sendRequest(code);
+			//		trace("pcSocket.sendRequest"+code);
+				}
+				else
+				{
+			//		currentConnect2Status.text="未连接";
+				}
+			}
+			 
+			 private function timehandle(e:TimerEvent):void  
+			 {  
+				 /*
+				 var date:String = dateFormatter.format(new Date());  
+				  currentUeStatusArrivalTime.text=date;*/
+				 if(pcSocket.socket.connected)
+				 {
+					 
+				 }
+				 else
+				 {
+					 
+					 Loading_Handle();
+					 tiplb.text="connecting";
+					 tiplb.includeInLayout=true;
+					 tiplb.visible=true;
+					 
+					 startBtn.includeInLayout=false;
+					 startBtn.visible=false;
+					 pcSocket.socket.connect("192.168.173.1",8888);//重新连接PC
+				  
+				 }
+				 
+				 if(ueSocket.socket.connected)
+				 {
+					 
+					 /*
+				     busyLb.includeInLayout=false;
+					 busyLb.visible=false;
+				 	 busy.includeInLayout=false;
+					 busy.visible=false;
+					 tiplb.includeInLayout=false;
+					 tiplb.visible=false;
+					 startBtn.includeInLayout=false;
+					 startBtn.visible=false;
+					 
+					 stateNormal.includeInLayout=true;
+					 stateNormal.visible=true;
+					 stateError.includeInLayout=false;
+					 stateError.visible=false;*/
+				 }
+				 else
+				 {
+					 trace("ueSocket not connect! timehandle");
+				     busyLb.includeInLayout=true;
+					 busyLb.visible=true;
+					 busy.includeInLayout=true;
+					 busy.visible=true;
+				    if(closeFlag)
+				    {
+					  sendPcCommand("3");
+				    }
+					
+						
+				   ueSocket.socket.connect("192.168.173.1",6000);
+				   //	ueSocket.socket.connect("192.168.0.119",6000);
+				 }
+			 }
+			 private function volumeChange():void
+			 {
+				//  trace("volumeChange()"+vf.format(volumebar.value));
+				 var str:String="volume:"+vf.format(volumebar.value);
+				 sendCommand(str);
+			 }
+			 private function speedChange():void
+			 {
+			//	 trace("speedChange()"+speedbar.value);
+				 var str:String="speed:"+speedbar.value;
+				 sendCommand(str);
+			 }
+			 private function handle_Change(flag:uint):void
+			 {
+				 var cmdstr:String="";
+				 if(flag==0)
+				 {
+					 HandleOn.includeInLayout=false;
+					 HandleOn.visible=false;
+					 HandleOff.includeInLayout=true;
+					 HandleOff.visible=true;
+					 playBtn.enabled=true;
+					 stopBtn.enabled=true;
+					 disableBtn.includeInLayout=false;
+					 disableBtn.visible=false;
+					 cmdstr="handle:off";
+					// trace(str);
+					 sendCommand(cmdstr);
+				 }
+				 else if(flag==1)
+				 {
+					 HandleOn.includeInLayout=true;
+					 HandleOn.visible=true;
+					 HandleOff.includeInLayout=false;
+					 HandleOff.visible=false;
+					 playBtn.enabled=false;
+					 stopBtn.enabled=false;
+					 disableBtn.includeInLayout=true;
+					 disableBtn.visible=true;
+					 cmdstr="handle:on";
+					// trace(str);
+					 sendCommand(cmdstr);
+				 }
+				 
+				 if(HandleOff.includeInLayout&&lenOff.includeInLayout)
+				 {
+					 playBtn.enabled=false;
+					 stopBtn.enabled=false;
+					 disableBtn.includeInLayout=true;
+					 disableBtn.visible=true;
+				 }
+			 }
+			 private function lens_Change(flag:uint):void
+			 {
+				 var cmdstr:String="";
+				 if(flag==0)
+				 {
+					 lenOn.includeInLayout=false;
+					 lenOn.visible=false;
+					 lenOff.includeInLayout=true;
+					 lenOff.visible=true;
+					 cmdstr="lens:off";
+				 
+					 sendCommand(cmdstr);
+				 }
+				 else if(flag==1)
+				 {
+					 lenOn.includeInLayout=true;
+					 lenOn.visible=true;
+					 lenOff.includeInLayout=false;
+					 lenOff.visible=false;
+					 cmdstr="lens:on";
+				
+					 sendCommand(cmdstr);
+				 }
+				 
+				 if(HandleOff.includeInLayout&&lenOff.includeInLayout)
+				 {
+					 playBtn.enabled=false;
+					 stopBtn.enabled=false;
+					 disableBtn.includeInLayout=true;
+					 disableBtn.visible=true;
+				 }
+				 
+			 }
+			 private function CanvasComplete():void
+			 {
+				 
+				 /*
+				 level1.id="FirstPersonExampleMap";
+				 level1.levelPic.source="assets/FirstPersonExampleMap.jpg";
+				 level1.y=23;
+				 level1.x=25;
+				 
+				 level1.addEventListener(MouseEvent.MOUSE_DOWN,changeLevel,false,0,true);
+				 picCanvas.addElement(level1);
+				 myImg.source="assets/FirstPersonExampleMap.jpg";
+				 
+			 
+				 level2.id="Example_Map0";
+				 level2.levelPic.source="assets/Example_Map0.jpg";
+				 level2.y=23;
+				 level2.x=259;
+				 level2.addEventListener(MouseEvent.MOUSE_DOWN,changeLevel,false,0,true);
+				 picCanvas.addElement(level2);
+				 
+			 
+				 level3.id="Example_Map1";
+				 level3.levelPic.source="assets/Example_Map1.jpg";
+				 level3.y=23;
+				 level3.x=493;
+				 level3.addEventListener(MouseEvent.MOUSE_DOWN,changeLevel,false,0,true);
+				 picCanvas.addElement(level3);
+				 
+				 var level5:LevelPicGp=new LevelPicGp;
+				 level5.id="Example_Map1";
+				 level5.levelPic.source="assets/Example_Map1.jpg";
+				 level5.y=23;
+				 level5.x=717;
+				 level5.addEventListener(MouseEvent.MOUSE_DOWN,changeLevel,false,0,true);
+				 picCanvas.addElement(level5);
+				 
+			 
+				 level4.id="bieshumap";
+				 level4.levelPic.source="assets/bieshumap.jpg";
+				 level4.y=171;
+				 level4.x=25;
+				 level4.addEventListener(MouseEvent.MOUSE_DOWN,changeLevel,false,0,true);
+				 picCanvas.addElement(level4); */
+				 
+			 }
+			 private function Loading_Handle():void
+			 {
+				 trace("Loading_Handle()");
+				 playBtn.includeInLayout=false;
+				 playBtn.visible=false;
+				 stopBtn.includeInLayout=true;
+				 stopBtn.visible=true;
+				 
+			 	 busyLb.includeInLayout=true;
+				 busyLb.visible=true;
+			 	 busy.includeInLayout=true;
+				 busy.visible=true;
+				 
+				 tiplb.text="Loading...";
+				 tiplb.includeInLayout=true;
+				 tiplb.visible=true;
+			 }
+		   private function	 Go_back():void
+		   {
+			   picCanvas.visible=true;
+			   picCanvas.includeInLayout=true;
+			   picBack.visible=true;
+			   picBack.includeInLayout=true;
+			   
+			   picCanvasSub.visible=false;
+			   picCanvasSub.includeInLayout=false;
+			   //scrllr.includeInLayout=false;
+			  // scrllr.visible=false;
+			   
+			   picCanvasSub.removeAllElements();
+			   backBtn.includeInLayout=false;
+			   backBtn.visible=false;
+			   picBackSub.visible=false;
+			   picBackSub.includeInLayout=false;
+			   
+			   if(HandleOff.includeInLayout&&lenOff.includeInLayout)
+			   {
+				   playBtn.enabled=false;
+				   stopBtn.enabled=false;
+				   disableBtn.includeInLayout=true;
+				   disableBtn.visible=true;
+			   }
+		   }
+			 
+		 ]]>
+	 </fx:Script>
+<s:Image source="assets/back.png" width="720" height="1280"/>
+<s:Image source="assets/title.png" width="720" height="100"/>
+<s:Image source="assets/mylogo.png"  x="0" y="15"/>
+	
+ 
+<mx:Button id="restartBtn"  x="532" y="17" click="sendPcCommand('43')" color="#ffffff" styleName="myRestartButton"/>
+<mx:Button id="closeBtn"   x="637" y="17" click="sendPcCommand('42')" color="#ffffff" styleName="myCloseButton"/>
+
+<s:Image id="myImg" x="0" y="97" width="720" height="460" scaleMode="stretch"/>
+<s:Image  source="assets/labelBack.png" x="0" y="465" width="720"/>
+<mx:Label text="机器名称:" fontSize="22" x="238" y="483" color="#ffffff"     />	
+<mx:Label id="currentPCName" text="12" fontSize="22" x="335" y="485" color="#ffffff"   width="50%"/>		
+<mx:Label text="当前场景:" fontSize="22" x="238" y="518" color="#ffffff" />
+<mx:Label id="currentLevel" text="23" fontSize="22" x="335" y="520" color="#ffffff"  width="50%"/>
+
+<mx:Button   id="playBtn"   x="273" y="575" click="stopBtn.includeInLayout=true;stopBtn.visible=true;playBtn.includeInLayout=false;playBtn.visible=false;sendCommand('play:')" includeInLayout="false"  visible="false"  styleName="myPlayButton" />
+<mx:Button  id="stopBtn"   x="273" y="575" click="stopBtn.includeInLayout=false;stopBtn.visible=false;playBtn.includeInLayout=true;playBtn.visible=true;sendCommand('stop:')"   styleName="myStopButton"/>
+<s:Image  id="disableBtn"   x="273" y="575" source="assets/disable.png" includeInLayout="false"  visible="false"/>
+
+<mx:Button id="resetBtn" x="121" y="600" click="sendCommand('reset:')"  styleName="myResetButton"/>
+	
+<s:Image source="assets/on.png" x="475" id="HandleOn"	 y="570" includeInLayout="false" visible="false" click="handle_Change(0)"/>
+<s:Image source="assets/off.png" x="475" id="HandleOff"	 y="570" includeInLayout="true" visible="true" click="handle_Change(1)"/>
+<s:Image source="assets/on.png" x="475" id="lenOn"	 y="660" includeInLayout="true" visible="true" click="lens_Change(0)"/>
+<s:Image source="assets/off.png" x="475" id="lenOff"	 y="660" includeInLayout="false" visible="false" click="lens_Change(1)"/>
+<s:Image source="assets/handle.png" x="565"  y="600" />
+<s:Image source="assets/len.png" x="565"  y="688" />
+	
+<s:Image source="assets/manwalk.png" x="69" y="756"/>	
+<s:HSlider id="speedbar" showDataTip="false"  snapInterval="5" minimum="25" maximum="65" value="35"  x="130"   y="750" width="500" change="speedChange()"  skinClass="components.HSliderSkin"/>
+
+	 
+<s:Image source="assets/vol.png" x="67" y="820"/>	
+ <mx:Label x="150" y="855" fontSize="20" text="-"/>
+ <s:HSlider id="volumebar" showDataTip="false"  snapInterval="0.01" minimum="0" maximum="1" value="1"  x="130"   y="813" width="500" change="volumeChange()"  skinClass="components.HSliderSkin"/>
+<mx:Label x="569" y="855" fontSize="20" text="+"/>
+<s:Image id="picBack" source="assets/picBackSub.png" x="0" y="885"/>
+	<mx:Canvas  creationComplete="CanvasComplete()" x="0" y="885"  id="picCanvas" width="720" height="360" horizontalScrollBarStyleName="hscroll" verticalScrollPolicy="off" horizontalScrollPolicy="off" >
+		
+		
+	</mx:Canvas>
+	
+<s:Image id="picBackSub" source="assets/picBackSub.png" x="0" y="885" includeInLayout="false" visible="false"/>
+	<mx:Canvas includeInLayout="false" visible="false"  x="0"   id="picCanvasSub" y="930" width="720" height="345" horizontalScrollBarStyleName="hscroll" verticalScrollPolicy="off"  >
+		
+		
+	</mx:Canvas>
+	
+	<!--s:Scroller  includeInLayout="false" visible="false"  x="0"  y="930"  horizontalScrollBar="{vsc}"     verticalScrollPolicy="off"     color="haloblue"    id="scrllr"      width="720" height="345"  >
+		
+		
+		
+		<s:Group includeInLayout="false" visible="false"     id="picCanvasSub"  width="720" height="345">
+			
+		</s:Group>
+		 
+		
+	</s:Scroller-->
+	
+	<mx:Button includeInLayout="false" visible="false"  id="backBtn" x="325" y="896" click="Go_back()"  styleName="myReturnButton"/>
+	<s:Image id="busyLb" source="assets/dc.png" x="0" y="0" width="720" height="1280" includeInLayout="false"  visible="false"/>
+	<mx:Label id="tiplb" x="0" y="640"  includeInLayout="false" visible="false"  textAlign="center" width="720"/>
+	 
+	<mx:Button id="startBtn"  horizontalCenter="0" y="720" click="startBtn.includeInLayout=false;startBtn.visible=false;sendPcCommand('41')" color="#ffffff" styleName="myStartButton" includeInLayout="true" visible="true"/>
+	<s:BusyIndicator  id="busy" y="495"    horizontalCenter="0"  includeInLayout="false" visible="false"  rotationInterval="1000"    />
+	<s:BusyIndicator  id="busy1" y="980"    x="330"  includeInLayout="false" visible="false"  rotationInterval="1000"     />
+</s:View>

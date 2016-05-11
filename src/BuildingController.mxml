@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ViewNavigatorApplication xmlns:fx="http://ns.adobe.com/mxml/2009" applicationDPI="320"       width="720" height="1280"
+							xmlns:s="library://ns.adobe.com/flex/spark" firstView="views.BuildingControllerView" creationComplete="creationComplete_Handle()" splashScreenImage="components.MyScreenImageSource" splashScreenMinimumDisplayTime="1500" splashScreenScaleMode="stretch">
+	<fx:Script>
+		<![CDATA[
+			private function creationComplete_Handle():void{
+				this.actionBar.visible=false;
+				this.actionBar.includeInLayout=false;
+			}
+		]]>
+	</fx:Script>
+	<fx:Style source="styles.css"/>
+</s:ViewNavigatorApplication>
+
