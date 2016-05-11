@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:mx="library://ns.adobe.com/flex/mx"
+		 xmlns:s="library://ns.adobe.com/flex/spark" width="202" height="124">
+		<fx:Style>
+		@namespace s "library://ns.adobe.com/flex/spark";
+		@namespace mx "library://ns.adobe.com/flex/mx";
+		 
+	</fx:Style>
+	<fx:Script>
+		<![CDATA[
+			 
+		]]>
+	</fx:Script>
+	<s:Image id="blackback" x="0" y="0"  source="assets/blackback.png" width="202" height="124" includeInLayout="true" visible="true"/>
+	<s:Image id="blueback" x="0" y="0"  source="assets/blueback.png" width="202" height="124" includeInLayout="false" visible="false"/>
+	<s:Image id="levelPic" x="5" y="5" width="192" height="114" scaleMode="stretch"/>
+</s:Group>

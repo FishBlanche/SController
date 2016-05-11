@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spark:HSliderTrackSkin xmlns:fx="http://ns.adobe.com/mxml/2009" 
+						xmlns:s="library://ns.adobe.com/flex/spark" xmlns:spark="spark.skins.spark.*" width="479" height="16">
+<s:Image source="assets/trackSkin1.png" width="479" height="16"/>
+</spark:HSliderTrackSkin>
